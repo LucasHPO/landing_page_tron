@@ -1,0 +1,59 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 80vh;
+    background-image: url(https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B566034E8849BC73CB26996A548B485A775306BBD832987282C87074C00CB252/scale?width=1920&aspectRatio=1.78&format=jpeg);
+    background-size: cover;
+
+    &__content{
+        max-width: 400px;
+
+        &__branding{
+
+            img{
+                width: 100%;
+            }
+        }
+
+        &__description {
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            background-color: rgba( variaveis.$corDeFundo, 0.5);
+            border-radius: 10px;
+            font-style: italic;
+            margin-bottom: 24px;
+
+            ul{
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            li{
+                list-style:inside;
+            }
+
+            p {
+                margin-top: 16px;
+                letter-spacing: 0.5px;
+            }
+
+            .button {
+                width: 100%;
+                text-align: center;
+                margin-top: 16px;
+
+                &:last-child{
+                    background-color: variaveis.$corDeFundo;
+                    border: 2px solid variaveis.$corDeFundo;
+
+                    &:hover{
+                        border: 2px solid variaveis.$corPrincipalTexto;
+                    }
+                }
+            }
+
+        }
+    }   
+}
